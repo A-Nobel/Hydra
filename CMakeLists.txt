@@ -15,7 +15,7 @@ else()
 endif()
 configure_file(hydra_build_config.h.in ${CMAKE_CURRENT_BINARY_DIR}/hydra_build_config.h)
 
-find_package(Boost REQUIRED COMPONENTS timer)
+find_package(Boost REQUIRED COMPONENTS timer thread serialization)
 find_package(spark_dsg REQUIRED)
 find_package(teaserpp REQUIRED)
 find_package(GTSAM REQUIRED)
